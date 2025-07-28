@@ -17,10 +17,9 @@
 <body>
     <div class="login-card">
         <h2>Iniciar Sesión</h2>
-
-        <form id="login-form">
-            <input type="text" id="usuario" placeholder="Ingresa tu nombre" required>
-            <input type="password" id="password" placeholder="Contraseña" required>
+        <form id="login-form" autocomplete="off">
+            <input type="text" id="usuario" placeholder="Ingresa tu nombre" required autocomplete="off">
+            <input type="password" id="password" placeholder="Contraseña" required autocomplete="new-password">
             <button type="submit">Ingresar</button>
             <p id="login-mensaje"></p>
         </form>
