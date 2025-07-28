@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Metadatos -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Invitación a mi reunión</title>
+
+    <!-- Fuentes y estilos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Contenedor principal con scroll por pantallas -->
+    <div class="snap-container">
+
+        <!-- Sección de bienvenida -->
+        <header class="section">
+            <nav class="top-nav">
+                <ul>
+                    <li><a href="#asistencia">Asistencia</a></li>
+                    <li><a href="#playlist">Playlist</a></li>
+                    <li><a href="#eventos">Eventos</a></li>
+                </ul>
+            </nav>
+            <h1>¡Bienvenido!</h1>
+            <p id="saludo-usuario"></p> <!-- Aquí aparecerá el saludo -->
+            <p>Nos juntamos el <strong>10 de agosto</strong> a las <strong>20:00</strong>.</p>
+            <p>Lugar: Mi casa 😄</p>
+        </header>
+
+        <!-- Sección Asistencia -->
+        <main class="section asistencia" id="asistencia">
+            <div class="section-card">
+                <h2>Confirmá tu asistencia</h2>
+                <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSfj-850L5aGxxbJYFYOLhqZTGQyVfeowKS9lnISckG5ClLygQ/viewform?embedded=true"
+                    width="100%" height="900"
+                    frameborder="0"
+                    marginheight="0"
+                    marginwidth="0"
+                    style="border-radius: 12px; overflow: hidden;">
+                </iframe>
+            </div>
+            <a href="#" class="back-to-top" aria-label="Volver al inicio">↑</a>
+        </main>
+
+
+        <!-- Sección Playlist -->
+        <section class="section playlist" id="playlist">
+            <div class="section-card">
+                <h2>Playlist colaborativa</h2>
+                <p>Agregá tus canciones favoritas:</p>
+                <div class="ytmusic-container">
+                    <a href="https://music.youtube.com/playlist?list=PLBrLC9snGovDIimHCNcXxhrcOLX9z5FrV&si=ZA9EvvP8hVfV_uw5"
+                        target="_blank" class="ytmusic-button">
+                        🎵 Abrir Playlist en YouTube Music
+                    </a>
+                </div>
+            </div>
+            <a href="#" class="back-to-top" aria-label="Volver al inicio">↑</a>
+        </section>
+
+        <!-- Sección Eventos -->
+        <section class="section eventos" id="eventos">
+            <div class="section-card">
+                <h2>Próximos Eventos</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <h3>Reunión Agosto</h3>
+                        <p>Fecha: 15/08/2025</p>
+                        <p>Lugar: Casa de Juan</p>
+                    </div>
+                    <div class="card">
+                        <h3>Pizza Party</h3>
+                        <p>Fecha: 22/08/2025</p>
+                        <p>Lugar: Terraza de Ana</p>
+                    </div>
+                    <div class="card">
+                        <h3>Asado</h3>
+                        <p>Fecha: 29/08/2025</p>
+                        <p>Lugar: Quinta Los Amigos</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="back-to-top" aria-label="Volver al inicio">↑</a>
+        </section>
+
+        <!-- Footer -->
+        <footer class="section footer">
+            <p>¡Nos vemos pronto!</p>
+        </footer>
+    </div>
+
+    <!-- Barra lateral con puntos -->
+    <div class="nav-dots">
+        <span data-section="0" class="active"></span>
+        <span data-section="1"></span>
+        <span data-section="2"></span>
+        <span data-section="3"></span>
+        <span data-section="4"></span>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>

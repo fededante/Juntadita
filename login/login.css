@@ -1,0 +1,103 @@
+/* ===============================
+   Estilos generales de la página
+   =============================== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #4b3bff, #8f76ff, #b49fff);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===============================
+   Contenedor del Login
+   =============================== */
+.login-card {
+    background: rgba(44, 44, 51, 0.85);
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    /* Aumentamos ancho */
+    min-height: 320px;
+    /* Altura mínima */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* ===============================
+   Título del Login
+   =============================== */
+.login-card h2 {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* ===============================
+   Inputs del formulario
+   =============================== */
+.login-card form {
+    width: 100%;
+    /* el formulario ocupa todo el ancho */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-card input {
+    width: 85%;
+    /* centrado y con ancho fijo */
+    padding: 12px 15px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.12);
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.3s, background 0.3s;
+    text-align: center;
+    display: block;
+}
+
+.login-card input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.login-card input:focus {
+    border: 1px solid #6c63ff;
+    background: rgba(255, 255, 255, 0.18);
+}
+
+/* ===============================
+   Botón
+   =============================== */
+.login-card button {
+    background: linear-gradient(90deg, #6c63ff, #5a55e2);
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    width: 85%;
+    /* igual ancho que los inputs */
+    margin-top: 20px;
+    transition: transform 0.3s ease, background 0.3s ease;
+    box-shadow: none;
+}
+
+.login-card button:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(90deg, #5a55e2, #6c63ff);
+}
